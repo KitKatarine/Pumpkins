@@ -6,22 +6,25 @@
   <script src="pumpkinsScript.js"></script>
  </head>
  <body onload="draw();">
-  <p id="instructions">Instructions:</p>
-  <br><br>
-  <p>Click the tools on the left side! Draw on the pumpkin!</p>
+  
   <canvas id="pumpkin"width="480" height="480">pumpkins</canvas>
   <canvas id="grid"width="480" height="480">grid</canvas>
    <canvas id="canvas" width="480" height="480">
      Your browser doesn't support Canvas! :(
    </canvas> <!-- I forgot comments in HTML were shit. Load canvas here. -->
+   
    <div id="toolbar">
       <button id="draw">Draw</button>
       <button id="erase">Erase</button>
       <button id="toggle_grid">Toggle Grid</button>
       <br><br><br><br>
-      <button id="clear_all">Clear all</button>
+      <button id="clear_all" onclick="clearAll()">Clear all</button>
+      
       
    </div>
+   <p id="instructions">Instructions:</p>
+  <br><br>
+  <p>Click the tools on the left side! Draw on the pumpkin! If you want to save it, take a screenshot because I can't code.</p>
    
  </body>
 </html>
