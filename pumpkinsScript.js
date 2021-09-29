@@ -16,17 +16,26 @@ function draw() {
         
         ctx_pumpkin.drawImage(pumpkin, 0, 0, 480,480);//draw the image with scaling to the canvas size
 
-        
+
         var grid = 0;
         var gridbtn = document.getElementById("toggle_grid");
+        if (grid == 0){
+            gridbtn.style.background="#000000";
+            gridbtn.style.color="chocolate";
+        }
         gridbtn.addEventListener("click", function toggleGrid(){
             if (grid==1)
             {
                 grid=0;
+                gridbtn.style.background="#000000";
+                gridbtn.style.color="chocolate";
                 ctx_grid.clearRect(0,0,c_grid.width,c_grid.height);
             }
             else{
                 grid=1;
+                gridbtn.style.background="#70de3a";
+                gridbtn.style.color="#000000";
+                
                 for (var a=0;a<c_grid.width;a=a+10)
                 {
                     ctx_grid.strokeStyle="#8c8c8c";
@@ -69,13 +78,29 @@ function draw() {
     var Draw = 1;
     var btnDraw = document.getElementById("draw");
     var btnErase = document.getElementById("erase");
+    var btnClear = document.getElementById("clear_all");
+    if (Draw == 1){
+        btnDraw.style.background="#70de3a";
+        btnDraw.style.color="#000000";
+    }
+    btnClear.addEventListener("click", function clearAll(){
+        ctx_drawing.clearRect(0,0,480,480);
+    });
 
     btnDraw.addEventListener("click", function doodle(){
         Draw = 1;
+        btnDraw.style.background="#70de3a";
+        btnDraw.style.color="#000000";
+        btnErase.style.background="#000000";
+        btnErase.style.color="chocolate";
     });
 
     btnErase.addEventListener("click", function erase(){
         Draw = 0;
+        btnErase.style.background="#70de3a";
+        btnErase.style.color="#000000";
+        btnDraw.style.background="#000000";
+        btnDraw.style.color="chocolate";
     });
 
     
@@ -133,4 +158,5 @@ function draw() {
 
 
 }
+
 
