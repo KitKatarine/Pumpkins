@@ -36,31 +36,31 @@ function draw() {
                 gridbtn.style.background="#70de3a";
                 gridbtn.style.color="#000000";
                 
-                for (var a=0;a<c_grid.width;a=a+10)
+                for (var a=2;a<c_grid.width;a=a+10)
                 {
                     ctx_grid.strokeStyle="#8c8c8c";
                     ctx_grid.beginPath();       // Start a new path
-                    ctx_grid.moveTo(a, 0);   
+                    ctx_grid.moveTo(a, 2);   
                     ctx_grid.lineTo(a, c_grid.height);  
                     ctx_grid.stroke();   // stroke path
                 }
-                for (var b=0;b<c_grid.height;b=b+10)
+                for (var b=2;b<c_grid.height;b=b+10)
                 {
                     ctx_grid.strokeStyle="#8c8c8c";
                     ctx_grid.beginPath();      
-                    ctx_grid.moveTo(0, b);   
+                    ctx_grid.moveTo(2, b);   
                     ctx_grid.lineTo(c_grid.width, b);  
                     ctx_grid.stroke(); 
                 }
                 ctx_grid.strokeStyle="#ff0000";
                 ctx_grid.beginPath();       
-                ctx_grid.moveTo(240, 0);    
-                ctx_grid.lineTo(240, c_grid.height);  
+                ctx_grid.moveTo(242, 0);    
+                ctx_grid.lineTo(242, c_grid.height);  
                 ctx_grid.stroke();
                     
                 ctx_grid.beginPath();     
-                ctx_grid.moveTo(0, 240);    
-                ctx_grid.lineTo(c_grid.width, 240);  
+                ctx_grid.moveTo(0, 242);    
+                ctx_grid.lineTo(c_grid.width, 242);  
                 ctx_grid.stroke();
             }
         });
