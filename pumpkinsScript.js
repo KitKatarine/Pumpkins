@@ -83,8 +83,14 @@ function draw() {
         btnDraw.style.background="#70de3a";
         btnDraw.style.color="#000000";
     }
-    btnClear.addEventListener("click", function clearAll(){
-        ctx_drawing.clearRect(0,0,480,480);
+    btnClear.addEventListener("click", function clearAll(){//clear all button
+        if(confirm("Are you sure you wish to clear your drawing? This cannot be undone!")){
+            ctx_drawing.clearRect(0,0,480,480);
+        }
+        else{
+            return 0;
+        }
+        
     });
 
     btnDraw.addEventListener("click", function doodle(){
@@ -155,8 +161,6 @@ function draw() {
                 ctx_drawing.clearRect(canvasX, canvasY, 10, 10);
             }
         });
-
-
 }
 
 
