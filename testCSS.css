@@ -1,0 +1,46 @@
+
+#pumpkin {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); 
+    position: fixed; 
+    left: 25%; 
+    top: 5%; 
+    width: 75%; 
+    max-width: 480px; 
+    cursor: crosshair; 
+    touch-action: none;
+}
+#canvas {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); 
+    position: fixed; 
+    left: 25%; 
+    top: 5%; 
+    width: 75%; 
+    max-width: 480px; 
+    cursor: crosshair; 
+    touch-action: none;
+}
+#grid {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); 
+    position: fixed; 
+    left: 25%; 
+    top: 5%; 
+    width: 75%; 
+    max-width: 480px; 
+    cursor: crosshair; 
+    touch-action: none;
+}
+#toolbar {
+    margin-left: 5%;
+    margin-top: 5%;
+}
+button {
+    display:flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+#instructions {
+    word-wrap: break-word;
+    max-width: 250px;
+
+}
