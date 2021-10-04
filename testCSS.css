@@ -1,9 +1,27 @@
-
 body {
     background-color: black;
 }
 
-
+#pumpkin_lit {
+    border: 2px solid chocolate;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); 
+    position: fixed; 
+    left: 30%; 
+    top: 5%; 
+    width: 75%; 
+    max-width: 480px; 
+    touch-action: none;
+}
+#pumpkin_unlit {
+    border: 2px solid chocolate;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); 
+    position: fixed; 
+    left: 30%; 
+    top: 5%; 
+    width: 75%; 
+    max-width: 480px; 
+    touch-action: none;
+}
 
 #pumpkin {
     border: 2px solid chocolate;
@@ -13,7 +31,6 @@ body {
     top: 5%; 
     width: 75%; 
     max-width: 480px; 
-    cursor: crosshair; 
     touch-action: none;
 }
 #canvas {
